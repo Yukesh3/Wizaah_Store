@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+}
+
+span{
+    text-decoration: line-through;
+    color: grey;
+}
+
+/*---------------------- navBar ----------------------*/
+
+.navbar{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-areas: 'One One One' 'Two Three Four';
+    align-items: center;
+    border: 0.5px solid grey;
+}
+
+.FreeDelivery{
+    grid-area: One;
+    text-align: center;
+    background-color: #002e35;;
+    margin-bottom: 0.5%;
+    color: white;
+    font-weight: 100;
+}
+
+.Menu{
+    display: none;
+}
+
+.Logo{
+    grid-area: Two;
+    margin-left: 25%;
+    width: 15vw;
+}
+
+.Logo img{
+    width: 10vw;
+}
+
+#sectionMenu{
+    grid-area: Three;
+    width: 30vw;
+    margin:0% 8%;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.sectionMenuHome{
+    grid-area: Three;
+    width: 30vw;
+    margin:0% 8%;
+    font-size: 1.1rem;
+}
+
+.sectionMenuHome ul a{
+    color: #000000;
+}
+
+.navIcons{
+    grid-area: Four;
+    width: 20vw;
+    margin:0 55% 4% 50%;
+}
+
+.navIcons ul a{
+text-decoration: none;
+}
+
+.navIcons ul li{
+    width: 2.5vw;
+    height: 1vh;
+}
+
+.navIcons ul li img{
+    width: 100%;
+}
+
+ul li{
+    display: inline-block;
+    padding: 1%;
+    margin: 1% 4%;
+    list-style: none;
+}
+
+.cartNumbers{
+    text-decoration: none;
+    position: relative;
+    top: 28px;
+    left: 10px;
+    background-color: #002e35;
+    color: white;
+    padding: 12%;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+/* ----------------- Footer ----------------- */
+
+.Footer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 1px solid grey;
+    height: 25vh;    
+}
+
+.Footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+
+.FooterLogo{
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer div img{
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+
+.Links, .Contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.Links a, .Contact a{
+    text-decoration: none;
+    margin-top: 2%;
+    color: #000000;
+    font-weight: 550;
+}
+
+/*-------------------- Cart Box ----------------------*/
+table, tr,th,td{
+    border: none;
+    width: 100%;
+    border-bottom: 0.5px solid rebeccapurple;
+    border-collapse: collapse;
+}
+
+#CartProduct{
+    border: 0.5px solid rebeccapurple;
+    border-bottom: none;
+    border-top: 2px solid rebeccapurple;
+    width: 60vw;
+    margin:2% auto;
+}
+
+.tdImgWithRemove{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tdImgWithRemove p{
+    margin-right: 10%;
+    color: red;
+    cursor: pointer;
+}
+
+.tdImgWithRemove img{
+    width: 42%;
+}
+
+.nameOfItem{
+    display: none;
+}
+
+.tdNo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tdBor{
+    border-bottom: none;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tr{
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    text-align: center;
+}
+
+td{
+    height:20vh;
+    border: 1px solid rebeccapurple;
+}
+
+/*-------------------- Products Page ----------------------*/
+
+
+.product{
+    display: grid;
+    width: 80vw;
+    margin: 2% 10%;
+    grid-template-columns: 70% 30%;
+    overflow: hidden;
+}
+    
+.productImage{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 110vh;
+}
+    
+.images{
+    width: 70%;
+    height: 55vh;
+    padding: 5px;
+}
+
+.productDetails div{
+    margin: 2.7% 2%;
+}
+
+.productDetails button{
+    width:11%;
+}
+
+.sale{
+    border:1px solid gray;
+    border-radius: 42%;
+    padding: 1%;
+    background-color: #002e35;
+    color: white;
+}
+
+.sizeButtons{
+    border:1px solid gray;
+    border-radius: 42%;
+    padding: 1%;
+}
+
+.sizeButtons:focus{
+    background-color: #000000;
+    color: white;
+}
+
+.Quantity{
+    border: 0.5px solid gray;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%; 
+}
+
+.productDetails hr{
+    width: 95%;
+    margin: 0 2%;
+    
+}
+
+.cartButton button{
+    width: 100%;  
+}
+
+.DetailIcons {
+    display: grid;
+    grid-template-columns: 10% 50% 38%;    
+    color: #000000;
+    cursor: pointer;
+    font-weight: 800;  
+}
+
+.DetailIcons span{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    transform: rotate(180deg);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.AllProducts{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 50vh;
+    width: 80vw;
+    margin: 5% 10%;
+}
+
+.AllProducts div{
+    height: 50vh;
+    border: 0.5px solid grey;
+    display: grid;
+    grid-template-rows: 75% 5% 10% 10%;
+    align-items: center;
+    color:#000000;
+    font-weight: 550;
+    cursor: pointer;
+    margin: 0% 2%;
+    text-align: center;
+}
+
+.AllProducts div button{
+    padding: 4%;
+    background-color: #002e35;
+    border:0.5px solid grey;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.AllProducts img{
+    width: 100%;
+    height: 100%;
+}
+
+.imageSelect:hover{
+    box-shadow: 1px 1px 1px 2px #002e35;
+}
+
+.Buy{
+    border:1px solid gray;
+    border-radius: 2%;
+    padding: 2.2%;
+    margin: 1% 0%;
+    background-color: #002e35;
+    color: white;
+}
+.Addcart{
+    padding: 2.2%;
+    margin: 1% 0%;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+}
+
+.productImgArrow{
+    display: none;
+}
+
+
+/*-------------------- Home Page ----------------------*/
+
+     /* ------ Exclusive ------ */
+
+.Exclusive{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80vw;
+    height: 84vh;
+    margin: 2% 12%;
+    overflow: hidden;
+}
+
+.Exclusive div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Exclusive div a{
+    text-decoration: none;
+}
+
+.Exclusive div a button{
+    padding: 2%;
+    border-radius: 50px;
+    border: 1px solid rebeccapurple;
+    cursor: pointer;
+    width: 10rem;
+}
+
+     /* ------ Category ------ */
+
+.Category{
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2% 20%;
+}
+
+.Category div img{
+    height: 40vh;
+    width: 18vw;
+}
+
+     /* ------ Featured ------ */
+
+.Featured{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 55vw;
+    height: auto;
+    margin: 2% 23%;
+    overflow: hidden;
+}
+
+.Featured div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Featured div img{
+    width: 80%;
+    height: 40%;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.Featured div img:hover{
+    filter: grayscale(0%);
+}
+
+
+
+
+/* --------------------------------  Media Query  -------------------------------- */
+@media only screen and (max-width: 375px){
+
+#sectionMenu{
+    display: none;
+    position: absolute;
+    top: 97px;
+    width: 19vw;
+    padding: 2%;
+    left: 0px;
+    margin: 0;
+    color: white;
+    background-color: #002e35;
+    opacity: 0.9;
+    
+}
+
+.sectionMenuHome{
+    display: none;
+}
+  
+#sectionMenu ul a{
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.Logo{
+    margin-left: 100%;
+}
+
+#CartProduct{
+font-size: 0.6rem;
+}
+
+.Logo img{
+    height: 10vh;
+    width: 30vw;
+}
+
+.Footer div{
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.FooterLogo p{
+    font-size: 0.7rem;
+}
+
+.Menu{
+    display:inline-block;
+}
+
+.App{
+    margin: 0px;
+}
+
+.productImage{
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 'one one one' 'two three four';
+    cursor: pointer; 
+}
+
+.Image_1{
+    grid-area: one;
+    margin: 0 10%;
+    height: 95%;
+}
+
+.Image_2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Image_3{
+    height: 100%;
+    margin-left: 16px;
+}
+
+.Image_4{
+    height: 100%;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.navIcons ul li{
+    width: 3.5vw;
+    height: 5vh;
+}
+
+.navIcons ul li img{
+    width: 5vw;
+    height: 5vh;
+}
+
+.AllProducts{
+    grid-template-columns: 50% 50%;
+    height: auto;
+}
+
+.AllProducts div{
+    margin-bottom: 5%;
+}
+
+.navIcons{
+    grid-area: Four;
+    width: 20vw;
+    margin:0 36%;
+}
+
+.Menu img{
+    width: 20vw;
+    position: absolute;
+    left: 10px;
+    top: 43px;
+    height:2rem;
+    width: 1.5rem;
+
+}
+
+.tdImgWithRemove {
+flex-direction: column;
+}
+
+.tdImgWithRemove img{
+    height:100% ;
+    width: 100%;
+}
+
+.productImgArrow{
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 5%; 
+}
+
+.product{
+    grid-template-columns: 100%;
+    height: auto;
+}
+
+.Footer{
+    grid-template-columns: 50% 50%;
+    height: auto;
+    font-size: 18px;
+}
+
+.Footer div{
+    border: 0.5px solid gray;
+    padding: 5%;
+}
+
+.Category{
+    flex-direction: column;
+}
+
+.Category div img{
+    height: 20vh;
+    width: 60vw;
+}
+
+.cartIcon span{
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    left:2px;
+    color: white;
+    font-size: 12px;
+}
+
+.Exclusive{
+    grid-template-columns: 100%;
+}
+
+}
